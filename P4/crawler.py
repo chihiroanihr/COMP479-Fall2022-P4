@@ -312,7 +312,7 @@ def crawl_worker(thread_id, robots_index):
             EMPTY_COUNTER.decrement()
         # Queue not empty
         url = None
-        print(COUNTER.val)
+        #print(COUNTER.val)
         try:
             # Stop crawling due to too many errors
             if NEW_ERROR_COUNT.val >= MAX_NEW_ERRORS or \
