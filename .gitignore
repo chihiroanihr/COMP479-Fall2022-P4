@@ -1,2 +1,5 @@
 \env
 \.scrapy
+\crawled_pages
+\logs
+\saved
