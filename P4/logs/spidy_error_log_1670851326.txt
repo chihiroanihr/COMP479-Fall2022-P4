@@ -1,0 +1,74 @@
+2022-12-12 08:22:11,096 - SPIDY - INFO - Successfully started crawler.
+2022-12-12 08:22:11,096 - SPIDY - INFO - Successfully started crawler.
+2022-12-12 08:22:13,902 - SPIDY - ERROR - 
+URL: #content-main
+ERROR: Unknown
+EXT: Invalid URL '/robots.txt#/robots.txtc/robots.txto/robots.txtn/robots.txtt/robots.txte/robots.txtn/robots.txtt/robots.txt-/robots.txtm/robots.txta/robots.txti/robots.txtn/robots.txt': No scheme supplied. Perhaps you meant http:///robots.txt#/robots.txtc/robots.txto/robots.txtn/robots.txtt/robots.txte/robots.txtn/robots.txtt/robots.txt-/robots.txtm/robots.txta/robots.txti/robots.txtn/robots.txt?
+
+
+2022-12-12 08:22:13,902 - SPIDY - ERROR - 
+URL: #content-main
+ERROR: Unknown
+EXT: Invalid URL '/robots.txt#/robots.txtc/robots.txto/robots.txtn/robots.txtt/robots.txte/robots.txtn/robots.txtt/robots.txt-/robots.txtm/robots.txta/robots.txti/robots.txtn/robots.txt': No scheme supplied. Perhaps you meant http:///robots.txt#/robots.txtc/robots.txto/robots.txtn/robots.txtt/robots.txte/robots.txtn/robots.txtt/robots.txt-/robots.txtm/robots.txta/robots.txti/robots.txtn/robots.txt?
+
+
+2022-12-12 08:22:18,150 - SPIDY - ERROR - 
+URL: mailto:reception.ginacody@concordia.ca
+ERROR: Unknown
+EXT: No connection adapters were found for 'mailto:/robots.txt'
+
+
+2022-12-12 08:22:18,150 - SPIDY - ERROR - 
+URL: mailto:reception.ginacody@concordia.ca
+ERROR: Unknown
+EXT: No connection adapters were found for 'mailto:/robots.txt'
+
+
+2022-12-12 08:22:20,485 - SPIDY - ERROR - 
+URL: https://campus.concordia.ca/psc/pscsprd/EMPLOYEE/SA/c/CU_EXT.CU_CLASS_SEARCH.GBL
+ERROR: Unknown
+EXT: HTTPSConnectionPool(host='campus.concordia.ca', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)')))
+
+
+2022-12-12 08:22:20,485 - SPIDY - ERROR - 
+URL: https://campus.concordia.ca/psc/pscsprd/EMPLOYEE/SA/c/CU_EXT.CU_CLASS_SEARCH.GBL
+ERROR: Unknown
+EXT: HTTPSConnectionPool(host='campus.concordia.ca', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)')))
+
+
+2022-12-12 08:22:32,931 - SPIDY - ERROR - 
+URL: https://www.concordia.ca/ginacody.html/ginacody/about/strategic-plan.html
+ERROR: OSError
+EXT: [Errno 2] No such file or directory: 'saved/https--www.concordia.ca-ginacody-ginacody-about-strategic-plan.html'
+
+
+2022-12-12 08:22:32,931 - SPIDY - ERROR - 
+URL: https://www.concordia.ca/ginacody.html/ginacody/about/strategic-plan.html
+ERROR: OSError
+EXT: [Errno 2] No such file or directory: 'saved/https--www.concordia.ca-ginacody-ginacody-about-strategic-plan.html'
+
+
+2022-12-12 08:22:32,951 - SPIDY - ERROR - 
+URL: https://www.concordia.ca/ginacody.html/summer/ginacody.html
+ERROR: OSError
+EXT: [Errno 2] No such file or directory: 'saved/https--www.concordia.ca-ginacody-summer-ginacody.html'
+
+
+2022-12-12 08:22:32,951 - SPIDY - ERROR - 
+URL: https://www.concordia.ca/ginacody.html/summer/ginacody.html
+ERROR: OSError
+EXT: [Errno 2] No such file or directory: 'saved/https--www.concordia.ca-ginacody-summer-ginacody.html'
+
+
+2022-12-12 08:22:33,357 - SPIDY - ERROR - 
+URL: https://www.concordia.ca/ginacody.html/ginacody/students/visiting-exchange.html
+ERROR: OSError
+EXT: [Errno 2] No such file or directory: 'saved/https--www.concordia.ca-ginacody-ginacody-students-visiting-exchange.html'
+
+
+2022-12-12 08:22:33,357 - SPIDY - ERROR - 
+URL: https://www.concordia.ca/ginacody.html/ginacody/students/visiting-exchange.html
+ERROR: OSError
+EXT: [Errno 2] No such file or directory: 'saved/https--www.concordia.ca-ginacody-ginacody-students-visiting-exchange.html'
+
+

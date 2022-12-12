@@ -1,0 +1,159 @@
+
+[08:20:42] [spidy] [WORKER #0] [INIT] [INFO]: Starting spidy Web Crawler version 1.6.5
+[08:20:42] [spidy] [WORKER #0] [INIT] [INFO]: Report any problems to GitHub at https://github.com/rivermont/spidy
+[08:20:42] [spidy] [WORKER #0] [INIT] [INFO]: Creating classes...
+[08:20:42] [spidy] [WORKER #0] [INIT] [INFO]: Creating functions...
+[08:20:42] [spidy] [WORKER #0] [INIT] [INFO]: Creating variables...
+[08:20:42] [spidy] [WORKER #0] [INIT] [INFO]: Successfully imported spidy Web Crawler version 1.6.5.
+[08:20:42] [spidy] [WORKER #0] [INIT] [INFO]: Call `crawler.main()` to start crawling, or refer to DOCS.md to see use of specific functions.
+[08:20:48] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://www.concordia.ca/robots.txt
+[08:20:50] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://www.instagram.com/robots.txt
+[08:20:51] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://library.concordia.ca//robots.txt
+[08:20:52] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://www.bkstr.com/robots.txt
+[08:20:56] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: /robots.txt#/robots.txtc/robots.txto/robots.txtn/robots.txtt/robots.txte/robots.txtn/robots.txtt/robots.txt-/robots.txtm/robots.txta/robots.txti/robots.txtn/robots.txt
+[08:20:58] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://hub.concordia.ca/robots.txt
+[08:20:58] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://www.google.com/robots.txt
+[08:20:58] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://www.facebook.com/robots.txt
+[08:20:59] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://campus.concordia.ca/robots.txt
+[08:21:00] [reppy] [WORKER #0] [ROBOTS] [INFO]: Reading robots.txt file at: https://outlook.office.com//robots.txt[spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html
+[08:20:49] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 0 links on https://www.concordia.ca/ginacody.html/news/stories/2022/12/07/concordia-engineering-grad-students-evaluate-the-famous-canada-pavilion-at-parc-jean-drapeau.img.png/1670616892654.jpg
+[08:20:49] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 153 links on https://www.concordia.ca/ginacody.html/news/stories/2022/03/18/concordia-launches-the-applied-ai-institute.html
+[08:20:50] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/maps.html
+[08:20:50] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 138 links on https://www.concordia.ca/ginacody.html/cuevents/offices/vprgs/sgs/2022/12/13/phd-oral-exam-mostafa-abdalaziz-mechanical-engineering.html?c=/ginacody
+[08:20:50] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://www.instagram.com/ginacodyschool
+[08:20:50] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/directories.html
+[08:20:50] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/students/birks.html
+[08:20:50] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/summer/ginacody.html
+[08:20:50] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/content/concordia/en/ginacody.logo.png/1661711177305.png
+[08:20:50] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/about/faculty-members.html
+[08:20:51] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 157 links on https://www.concordia.ca/ginacody.html/news/stories/2022/12/07/concordia-engineering-grad-students-evaluate-the-famous-canada-pavilion-at-parc-jean-drapeau.html?c=/ginacody
+[08:20:51] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/web/terms.html
+[08:20:51] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 0 links on https://www.concordia.ca/etc/designs/concordia/clientlibs/img/favicons/favicon-16x16.png
+[08:20:51] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://library.concordia.ca/
+[08:20:51] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/research/fellowships.html
+[08:20:51] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/footer.min.9baa888820b6d76330c3e27ab0105455.js
+[08:20:51] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/students.html
+[08:20:52] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/campaign.html
+[08:20:52] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/events.html
+[08:20:52] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/research/partnerships.html
+[08:20:52] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc.clientlibs/clientlibs/granite/jquery/granite.min.543d214c88dfa6f4a3233b630c82d875.js
+[08:20:52] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/research/chairs.html
+[08:20:52] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://www.bkstr.com/concordiastore
+[08:20:52] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/research/expertise.html
+[08:20:52] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 126 links on https://www.concordia.ca/ginacody.html/cunews/encs/aerospace/2021/12/14/new-aerospace-centre.html
+[08:20:52] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/img/icons/social-media/facebook-multi-color.png
+[08:20:53] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/img/icons/social-media/instagram-burgundy.png
+[08:20:53] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/about/leadership.html
+[08:20:53] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 142 links on https://www.concordia.ca/ginacody.html/news/stories/2022/02/17/concordia-to-co-lead-new-160-million-canadian-cybersecurity-innovation-network.html
+[08:20:53] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/about/accreditations.html
+[08:20:53] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/about/jobs.html
+[08:20:53] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc.clientlibs/clientlibs/granite/jquery.min.cee8557e8779d371fe722bbcdd3b3eb7.js
+[08:20:54] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 167 links on https://www.concordia.ca/ginacody.html/cuevents/offices/provost/fourth-space/programming/2022/12/13/greening-cities.html?c=/ginacody
+[08:20:54] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/students/campus-services.html
+[08:20:54] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/accordion.min.98ddb2f6bfaa95786e419c5610750ca7.js
+[08:20:54] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/hub/sign-in.min.419bf24d1b8634aba1ccce695a742243.js
+[08:20:55] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/about/equity-diversity-inclusion.html
+[08:20:55] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/jquery-resizecrop.min.2e48363ba7cee24f58ae76ef9fdebcfd.js
+[08:20:55] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/students/visiting-exchange.html
+[08:20:55] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/hr/jobs/openings.html
+[08:20:55] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 0 links on https://www.concordia.ca/etc/designs/concordia/clientlibs/img/favicons/favicon-32x32.png
+[08:20:55] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/news/news-list.min.e6d88320fbfcb3fc95f352679ee2d04b.css
+[08:20:56] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/bootstrap.min.66c792270d4819966a48123c68fb3235.css
+[08:20:56] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/news/news-list.min.64a4d26a2cbaae4123e8e5e17037c94f.js
+[08:20:56] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: #content-main
+[08:20:56] [spidy] [WORKER #2] [CRAWL] [ERROR]: An error was raised trying to process #content-main
+[08:20:56] [spidy] [WORKER #2] [ERROR] [INFO]: An unknown error happened. New debugging material!
+[08:20:56] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/web/privacy.html
+[08:20:56] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/concordia-master-templates.min.2b0117b9da57f379dc88e2694e4d07be.css
+[08:20:56] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/accordion.min.87371d60791c736fe42a03aa026e20cb.css
+[08:20:56] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/students/future-students.html
+[08:20:57] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/events/cancelled-classes.html
+[08:20:57] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/content/concordia/manifest.json
+[08:20:57] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/hub/sign-in.min.9fe2e3e378e7774e2cc69a163b850799.css
+[08:20:58] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/jmsb.html
+[08:20:58] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 0 links on https://www.concordia.ca/etc/designs/concordia/clientlibs/img/favicons/safari-pinned-tab.svg
+[08:20:58] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody.html
+[08:20:58] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://hub.concordia.ca/carrefour.html
+[08:20:58] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/rolebased-nav.min.027ade49f4881d31e7d0d169d2cfc2c5.js
+[08:20:58] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/students/academic-services/undergraduate/course-sequences.html
+[08:20:58] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/research/centres.html
+[08:20:58] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://www.google.com/jsapi
+[08:20:58] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/web/a-z.html
+[08:20:58] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://www.facebook.com/GinaCodySchool/
+[08:20:59] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://campus.concordia.ca/psc/pscsprd/EMPLOYEE/SA/c/CU_EXT.CU_CLASS_SEARCH.GBL
+[08:20:59] [spidy] [WORKER #4] [CRAWL] [ERROR]: An error was raised trying to process https://campus.concordia.ca/psc/pscsprd/EMPLOYEE/SA/c/CU_EXT.CU_CLASS_SEARCH.GBL
+[08:20:59] [spidy] [WORKER #4] [ERROR] [INFO]: An unknown error happened. New debugging material!
+[08:20:59] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/students/associations.html
+[08:21:00] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/news/newsletter.html
+[08:21:00] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/picturefill.min.d1d347561e31717ff8ec88ceed277a34.js
+[08:21:00] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/news/media-relations.html
+[08:21:00] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 138 links on https://www.concordia.ca/ginacody.html/cuevents/offices/vprgs/sgs/2022/12/14/phd-oral-exam-md-masiar-rahman-mechanical-engineering.html?c=/ginacody
+[08:21:00] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/news.html
+[08:21:00] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/favicon.ico
+[08:21:00] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/img/next_gen_now.png
+[08:21:00] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/img/icons/social-media/facebook-burgundy.png
+[08:21:00] [urllib] [WORKER #0] [ROBOTS] [INFO]: Parsing url: https://outlook.office.com/
+[08:21:01] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 181 links on https://www.concordia.ca/ginacody.html/news/stories/2022/12/06/concordians-hope-to-see-real-progress-at-the-15th-united-nations-biodiversity-conference.html?c=/ginacody
+[08:21:01] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 161 links on https://www.concordia.ca/ginacody.html/news/stories/2022/12/06/rotten-meat-could-be-easier-to-detect-thanks-to-a-new-biosensor-system-developed-at-concordia.html?c=/ginacody
+[08:21:01] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/academics/undergraduate/calendar.html
+[08:21:01] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 148 links on https://www.concordia.ca/ginacody.html/news/stories/2022/04/04/concordias-next-generation-cities-institute-welcomes-seven-new-partner-organizations.html
+[08:21:01] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/students/services/academic.html
+[08:21:01] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/campus-life/security.html
+[08:21:01] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 138 links on https://www.concordia.ca/ginacody.html/cuevents/offices/vprgs/sgs/2022/12/15/phd-oral-exam-mohamed-elhattab-electrical-and-computer-engineering.html?c=/ginacody
+[08:21:02] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/artsci.html
+[08:21:02] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/programs/graduate.html
+[08:21:02] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/academics/units.html
+[08:21:02] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/sgs.html
+[08:21:03] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/contact.html
+[08:21:03] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/img/icons/social-media/instagram-multi-color.png
+[08:21:03] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/jquery-ui.min.9ffd16de3b4244f6dbad417ea5db0b3d.css
+[08:21:03] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/alumni/iron-ring.html
+[08:21:03] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/content/concordia/en/ginacody/_jcr_content/content-main/box/box-parsys/grid_container/grid-container-parsys/card_1454564492/adaptiveimage.img.620.medium.jpg/1651089598877.jpg
+[08:21:03] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/news/news-grid.min.dfe9f7739ca01f6b7d896179d14df0c3.js
+[08:21:03] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/events/academic-dates.html
+[08:21:03] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/news/archive.html
+[08:21:05] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 0 links on https://www.concordia.ca/ginacody.html/news/stories/2022/12/06/rotten-meat-could-be-easier-to-detect-thanks-to-a-new-biosensor-system-developed-at-concordia.img.png/1670342607743.jpg
+[08:21:05] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 138 links on https://www.concordia.ca/ginacody.html/cuevents/offices/vprgs/sgs/2022/12/14/phd-oral-exam-mengting-zhao-information-and-systems-engineering.html?c=/ginacody
+[08:21:05] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 138 links on https://www.concordia.ca/ginacody.html/cuevents/offices/vprgs/sgs/2022/12/16/phd-oral-exam-mohammad-mohsen-delavari-mechanical-engineering.html?c=/ginacody
+[08:21:05] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/students/registration.html
+[08:21:05] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/aits.html
+[08:21:06] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/content/concordia/en/ginacody/_jcr_content/content-main/box/box-parsys/grid_container/grid-container-parsys/card_1912006551/adaptiveimage.img.620.medium.jpg/1651089671731.jpg
+[08:21:06] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/students/future-students/entrance-awards.html
+[08:21:06] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/quick-links.min.d3dfaa778ff5216c2c0761869e1a07b9.js
+[08:21:06] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/hub/sign-out.min.9533312efc181bd9fdcb2f50141e32f5.js
+[08:21:06] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/students/funding-research-opportunities.html
+[08:21:06] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 0 links on https://www.concordia.ca/ginacody.html/news/stories/2022/12/06/concordians-hope-to-see-real-progress-at-the-15th-united-nations-biodiversity-conference.img.png/1670619720822.jpg
+[08:21:07] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html//www.googletagmanager.com/ns.html?id=GTM-57BSZT
+[08:21:08] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/indigenous/resources/territorial-acknowledgement.html
+[08:21:08] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/web/accessibility.html
+[08:21:08] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/news/stories.html
+[08:21:08] [spidy] [WORKER #2] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/img/icons/social-media/linkedin-multi-color.png
+[08:21:08] [spidy] [WORKER #0] [CRAWL] [INFO]: Crawling reached to maximum page limit; stopping crawler.
+[08:21:08] [spidy] [WORKER #0] [CRAWL] [INFO]: Stopping all threads...
+[08:21:08] [spidy] [WORKER #0] [CRAWL] [INFO]: I think you've managed to download the entire internet. I guess you'll want to save your files...
+[08:21:08] [spidy] [WORKER #0] [SAVE] [INFO]: Saving files...
+[08:21:08] [spidy] [WORKER #0] [SAVE] [INFO]: Saved TODO list to crawler_todo.txt
+[08:21:08] [spidy] [WORKER #0] [SAVE] [INFO]: Saved DONE list to crawler_todo.txt
+[08:21:08] [spidy] [WORKER #0] [CRAWL] [INFO]: Queried 100 links.
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: Started at 08:20:42
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: Log location: logs/spidy_log_1670851242
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: Error log location: logs/spidy_error_log_1670851242.txt
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: 15003 links in TODO
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: 100 links in DONE
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: TODO/DONE: 150.03
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: 2/5 new errors caught.
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: 0/20 HTTP errors encountered.
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: 0/10 new MIMEs found.
+[08:21:08] [spidy] [WORKER #0] [LOG] [INFO]: 0/10 known errors caught.
+[08:21:08] [spidy] [WORKER #2] [CRAWL] [ERROR]: An error was raised trying to process None
+[08:21:08] [spidy] [WORKER #2] [ERROR] [INFO]: An OSError occurred.
+[08:21:08] [spidy] [WORKER #2] [LOG] [INFO]: Saved error message and timestamp to error log file
+[08:21:08] [spidy] [WORKER #2] [CRAWL] [INFO]: Thread execution stopped.
+[08:21:09] [spidy] [WORKER #3] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc.clientlibs/foundation/clientlibs/shared.min.e9d9a3990d7779c2e8e3361187f3d36b.js
+[08:21:09] [spidy] [WORKER #3] [CRAWL] [INFO]: Thread execution stopped.
+[08:21:09] [spidy] [WORKER #5] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/clientlibs/img/icons/social-media/twitter-burgundy.png
+[08:21:09] [spidy] [WORKER #5] [CRAWL] [INFO]: Thread execution stopped.
+[08:21:10] [spidy] [WORKER #1] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/etc/designs/concordia/concordia-master-components.min.89cc2bef1eb07a00d8ce3e6944b405fc.css
+[08:21:10] [spidy] [WORKER #1] [CRAWL] [INFO]: Thread execution stopped.
+[08:21:10] [spidy] [WORKER #4] [CRAWL] [INFO]: Found 164 links on https://www.concordia.ca/ginacody.html/ginacody/programs/co-op.html
+[08:21:10] [spidy] [WORKER #4] [CRAWL] [INFO]: Thread execution stopped.
