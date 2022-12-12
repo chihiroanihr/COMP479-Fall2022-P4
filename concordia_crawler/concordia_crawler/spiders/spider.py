@@ -91,11 +91,11 @@ class ConcordiaSpider(CrawlSpider):
             "title": soup.h1.string,
             "body": text
         }
-        # page = response.url.split("/")[-2]
-        # filename = f'quotes-{page}.html'
-        # with open(filename, 'wb') as f:
-        #     f.write(response.body)
-        # self.log(f'Saved file {filename}')
+        page = response.url.split("/")[-2]
+        filename = f'quotes-{page}.html'
+        with open(filename, 'wb') as f:
+            f.write(response.body)
+        self.log(f'Saved file {filename}')
 
     # # Define a method that will be called to process the items that are extracted by the spider
     # def process_item(self, item, spider):
