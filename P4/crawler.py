@@ -16,7 +16,8 @@ from os import path, makedirs
 from copy import copy
 from lxml import etree
 from lxml.html import iterlinks, resolve_base_href
-from robots_fetcher import RobotsFetcher
+from reppy.robots import Robots
+
 
 try:
     from P4 import __version__
@@ -48,7 +49,6 @@ PACKAGE_DIR = path.dirname(path.realpath(__file__))
 try:
     makedirs(WORKING_DIR + '/logs')  # Attempts to make the logs directory
     makedirs(WORKING_DIR + '/saved')  # Attempts to make the saved directory
-
 except OSError:
     pass  # Assumes only OSError wil complain if /logs already exists
 
@@ -120,6 +120,29 @@ write_log('INIT', 'Report any problems to GitHub at https://github.com/rivermont
 ###########
 
 write_log('INIT', 'Creating classes...')
+
+
+class RobotsFetcher(object):
+    def __init__(self, url, urlparsed):
+        self.url = url
+        self.urlparsed = urlparsed
+    
+    def fetch_robots(self):
+        # Create path for robots.txt
+        if self.urlparsed.path == '/':
+            robots_url = self.url + '/robots.txt'
+        else:
+            robots_url = self.url.replace(self.urlparsed.path, '/robots.txt')
+
+        # Log
+        write_log('ROBOTS',
+                    'Reading robots.txt file at: {0}'.format(robots_url),
+                    package='reppy')
+
+        # Fetch the robots.txt file for given URL, and create Robots instance
+        robots = Robots.fetch(robots_url)
+        
+        return robots
 
 
 class HeaderError(Exception):
@@ -322,31 +345,26 @@ def crawl_worker(thread_id, robots_index):
                 write_log('CRAWL', 'Too many errors have accumulated; stopping crawler.')
                 done_crawling()
                 break
-            # # If it's time for an autosave
-            # if COUNTER.val >= SAVE_COUNT:
-            #     # Make sure only one thread saves files
-            #     with save_mutex:
-            #         if COUNTER.val > 0:
-            #             try:
-            #                 write_log('CRAWL', 'Queried {0} links.'.format(str(COUNTER.val)), worker=thread_id)
-            #                 info_log()
-            #                 write_log('SAVE', 'Saving files...')
-            #                 save_files()
-            #                 if ZIP_FILES:
-            #                     current_time = time.time()
-            #                     # Format the current time as a string, using the format "YYYY-MM-DD_HH-MM-SS"
-            #                     time_string = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime(current_time))
-            #                     # Save to zip files
-            #                     zip_saved_files(time_string, 'saved')
-            #             finally:
-            #                 # Reset variables
-            #                 COUNTER = Counter(0)
-            #                 WORDS.clear()
             # Maximum pages to be retrieved by crawler is reached
-            elif DONE.qsize() >= MAX_CRAWL_PAGES:
+            elif COUNTER.val >= MAX_CRAWL_PAGES:
                 write_log('CRAWL', 'Crawling reached to maximum page limit; stopping crawler.')
                 done_crawling()
                 break
+            elif COUNTER.val >= SAVE_COUNT:  # If it's time for an autosave
+                # Make sure only one thread saves files
+                with save_mutex:
+                    if COUNTER.val > 0:
+                        try:
+                            write_log('CRAWL', 'Queried {0} links.'.format(str(COUNTER.val)), worker=thread_id)
+                            info_log()
+                            write_log('SAVE', 'Saving files...')
+                            save_files()
+                            if ZIP_FILES:
+                                zip_saved_files(time.time(), 'saved')
+                        finally:
+                            # Reset variables
+                            COUNTER = Counter(0)
+                            WORDS.clear()
             # Crawl the page
             else:
                 try:
@@ -623,6 +641,7 @@ def info_log():
     write_log('LOG', '{0}/{1} HTTP errors encountered.'.format(HTTP_ERROR_COUNT.val, MAX_HTTP_ERRORS))
     write_log('LOG', '{0}/{1} new MIMEs found.'.format(NEW_MIME_COUNT.val, MAX_NEW_MIMES))
     write_log('LOG', '{0}/{1} known errors caught.'.format(KNOWN_ERROR_COUNT.val, MAX_KNOWN_ERRORS))
+    write_log('LOG', '{0} pages to be crawled at maximum, {1} pages retrieved'.format(MAX_CRAWL_PAGES, COUNTER.val))
 
 
 def log(message, level=logging.DEBUG):
@@ -1042,7 +1061,6 @@ def init():
             TODO_FILE = 'crawler_todo.txt'
         else:
             TODO_FILE = input_
-        TODO_FILE = WORKING_DIR + TODO_FILE
 
         write_log('INIT', 'Location of the DONE save file (Default: crawler_done.txt):', status='INPUT')
         input_ = input()
@@ -1050,7 +1068,6 @@ def init():
             DONE_FILE = 'crawler_done.txt'
         else:
             DONE_FILE = input_
-        DONE_FILE = WORKING_DIR + DONE_FILE
 
         if SAVE_WORDS:
             write_log('INIT', 'Location of the words save file (Default: crawler_words.txt):', status='INPUT')
@@ -1061,7 +1078,6 @@ def init():
                 WORD_FILE = input_
         else:
             WORD_FILE = 'None'
-        WORD_FILE = WORKING_DIR + WORD_FILE
 
         write_log('INIT', 'After how many queried links should the crawler autosave? (Default: 100):', status='INPUT')
         input_ = input()
@@ -1197,16 +1213,15 @@ def done_crawling(keyboard_interrupt=False):
         else:
             write_log('CRAWL', 'I think you\'ve managed to download the entire internet. '
                                'I guess you\'ll want to save your files...')
-        write_log('SAVE', 'Saving files...')
         save_files()
-        write_log('CRAWL', 'Queried {0} links.'.format(str(COUNTER.val)))
-        info_log()
-        if ZIP_FILES:
-            current_time = time.time()
-            # Format the current time as a string, using the format "YYYY-MM-DD_HH-MM-SS"
-            time_string = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime(current_time))
-            # Save to zip files
-            zip_saved_files(time_string, 'saved')
+        # write_log('CRAWL', 'Queried {0} links.'.format(str(COUNTER.val)))
+        # info_log()
+        # if ZIP_FILES:
+        #     current_time = time.time()
+        #     # Format the current time as a string, using the format "YYYY-MM-DD_HH-MM-SS"
+        #     time_string = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime(current_time))
+        #     # Save to zip files
+        #     zip_saved_files(time_string, 'saved')
         LOG_FILE.close()
 
 
@@ -1215,7 +1230,7 @@ def handle_keyboard_interrupt():
     done_crawling(True)
 
 
-def main():
+def spidy_main():
     """
     The main function of spidy.
     """
@@ -1257,8 +1272,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    spidy_main()
 else:
     write_log('INIT', 'Successfully imported spidy Web Crawler version {0}.'.format(VERSION))
     write_log('INIT',
-              'Call `crawler.main()` to start crawling, or refer to DOCS.md to see use of specific functions.')
+              'Call `crawler.spidy_main()` to start crawling, or refer to DOCS.md to see use of specific functions.')
