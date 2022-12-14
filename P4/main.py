@@ -5,10 +5,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 from afinn import Afinn
 import sys
-# sys.path.insert(1, './spidy')
 
 from crawler import spidy_main
 from bs4 import BeautifulSoup
+import logging
 
 CRAWL_FOLDER='./saved'
 NUMBER_OF_INDEX_TERMS=20
