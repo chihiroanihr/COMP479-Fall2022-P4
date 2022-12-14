@@ -1,6 +1,5 @@
-import urllib
 from reppy.robots import Robots
-from spidy.crawler import write_log
+from P4.crawler import write_log
 
 
 class RobotsFetcher(object):
