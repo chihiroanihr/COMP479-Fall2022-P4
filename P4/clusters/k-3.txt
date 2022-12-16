@@ -1,0 +1,12 @@
+Top 20 terms for cluster 0 with k = 3: 
+school concordia science services academic calendar cody gina computer engineering research news graduate university student arts events class colleges schools 
+AFINN score for cluster 0 with k = 3 and top 20 terms: 0.0
+
+Top 20 terms for cluster 1 with k = 3: 
+concordia school calendar science event campus graduate services academic student arts students university class schools colleges test news research cody 
+AFINN score for cluster 1 with k = 3 and top 20 terms: 0.0
+
+Top 20 terms for cluster 2 with k = 3: 
+sustainable concordia aerospace future concordiaâ design school urban calendar development community research carbon stakeholders campus university christian moreau proposal ziaq 
+AFINN score for cluster 2 with k = 3 and top 20 terms: 2.0
+

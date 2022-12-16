@@ -1,0 +1,24 @@
+Top 20 terms for cluster 0 with k = 6: 
+school concordia science services academic calendar cody gina computer engineering research news graduate university student arts events class colleges schools 
+AFINN score for cluster 0 with k = 6 and top 20 terms: 0.0
+
+Top 20 terms for cluster 1 with k = 6: 
+aerospace concordia moreau ziaq proposal christian design 2021 future sustainable cciam neutral québec ciadi carbon stakeholders school centre years calendar 
+AFINN score for cluster 1 with k = 6 and top 20 terms: 2.0
+
+Top 20 terms for cluster 2 with k = 6: 
+test testing method production execution isolation risk propose cloud methods case activities environment interferences fault event solution school semantics providers 
+AFINN score for cluster 2 with k = 6 and top 20 terms: -1.0
+
+Top 20 terms for cluster 3 with k = 6: 
+concordia school calendar event student science academic services campus graduate students arts university class schools colleges news research current cody 
+AFINN score for cluster 3 with k = 6 and top 20 terms: 0.0
+
+Top 20 terms for cluster 4 with k = 6: 
+founded ba boutique based mary retail manette 99 coffee perfect concordia school world products jordan holiday fit suitablee pet comics 
+AFINN score for cluster 4 with k = 6 and top 20 terms: 4.0
+
+Top 20 terms for cluster 5 with k = 6: 
+concordiaâ concordia sustainable glatard institute smart solutions research says work mckelvey school partners problems instituteâ science community ai calendar graduate 
+AFINN score for cluster 5 with k = 6 and top 20 terms: 2.0
+
