@@ -241,7 +241,7 @@ def crawl_worker(thread_id, robots_index):
     global HEADER, WORKING_DIR, KILL_LIST
     global COUNTER, NEW_ERROR_COUNT, KNOWN_ERROR_COUNT, HTTP_ERROR_COUNT, NEW_MIME_COUNT
     global MAX_NEW_ERRORS, MAX_KNOWN_ERRORS, MAX_HTTP_ERRORS, MAX_NEW_MIMES, MAX_CRAWL_PAGES
-    global USE_CONFIG, OVERWRITE, RAISE_ERRORS, ZIP_FILES, OVERRIDE_SIZE, SAVE_WORDS, SAVE_PAGES, SAVE_COUNT
+    global USE_CONFIG, OVERWRITE, RAISE_ERRORS, ZIP_FILES, OVERRIDE_SIZE, SAVE_WORDS, SAVE_PAGES
     global TODO_FILE, DONE_FILE, ERR_LOG_FILE, WORD_FILE
     global RESPECT_ROBOTS, RESTRICT, DOMAIN
     global WORDS, TODO, DONE, THREAD_RUNNING
@@ -280,7 +280,7 @@ def crawl_worker(thread_id, robots_index):
                 write_log(LOG_FILE, 'CRAWL', 'Crawling reached to maximum page limit; stopping crawler.')
                 done_crawling()
                 break
-            elif COUNTER.val >= SAVE_COUNT:  # If it's time for an autosave
+            elif COUNTER.val >= MAX_CRAWL_PAGES:  # If it's time for an autosave
                 # Make sure only one thread saves files
                 with save_mutex:
                     if COUNTER.val > 0:
@@ -611,9 +611,9 @@ def zip_saved_files(out_file_name, directory):
     Creates a .zip file in the current directory containing all contents of dir, then empties.
     """
     print("DIR: " + directory)
-    shutil.make_archive("crawled_pages/" + str(out_file_name), 'zip', directory)  # Zips files
+    shutil.make_archive("crawled_pages", 'zip', directory)  # Zips files
     # Deletes saved folder if exists
-    if os.path.exists(directory):
+    if path.exists(directory):
         shutil.rmtree(directory)
     makedirs(directory)  # Creates empty folder of same name
     write_log(LOG_FILE, 'SAVE', 'Zipped documents to {0}.zip'.format(out_file_name))
@@ -791,7 +791,7 @@ no = ['n', 'no', 'N', 'No', 'False', 'false']
 
 # Initialize variables as empty that will be needed in the global scope
 HEADER = {}
-SAVE_COUNT, MAX_NEW_ERRORS, MAX_KNOWN_ERRORS, MAX_HTTP_ERRORS = 0, 0, 0, 0
+MAX_NEW_ERRORS, MAX_KNOWN_ERRORS, MAX_HTTP_ERRORS = 0, 0, 0
 MAX_CRAWL_PAGES = 0
 MAX_NEW_MIMES = 0
 RESPECT_ROBOTS, RESTRICT, DOMAIN = False, False, ''
@@ -817,7 +817,7 @@ def init():
     global HEADER, PACKAGE_DIR, WORKING_DIR, KILL_LIST
     global COUNTER, NEW_ERROR_COUNT, KNOWN_ERROR_COUNT, HTTP_ERROR_COUNT, NEW_MIME_COUNT
     global MAX_NEW_ERRORS, MAX_KNOWN_ERRORS, MAX_HTTP_ERRORS, MAX_NEW_MIMES, MAX_CRAWL_PAGES
-    global USE_CONFIG, OVERWRITE, RAISE_ERRORS, ZIP_FILES, OVERRIDE_SIZE, SAVE_WORDS, SAVE_PAGES, SAVE_COUNT
+    global USE_CONFIG, OVERWRITE, RAISE_ERRORS, ZIP_FILES, OVERRIDE_SIZE, SAVE_WORDS, SAVE_PAGES
     global TODO_FILE, DONE_FILE, ERR_LOG_FILE, WORD_FILE
     global RESPECT_ROBOTS, RESTRICT, DOMAIN
     global WORDS, TODO, DONE, THREAD_COUNT
@@ -1009,15 +1009,6 @@ def init():
         else:
             WORD_FILE = 'None'
 
-        write_log(LOG_FILE, 'INIT', 'After how many queried links should the crawler autosave? (Default: 100):', status='INPUT')
-        input_ = input()
-        if not bool(input_):
-            SAVE_COUNT = 100
-        elif not input_.isdigit():
-            handle_invalid_input('integer')
-        else:
-            SAVE_COUNT = int(input_)
-
         if not RAISE_ERRORS:
             write_log(LOG_FILE, 'INIT', 'After how many new errors should spidy stop? (Default: 5):', status='INPUT')
             input_ = input()
@@ -1170,7 +1161,7 @@ def spidy_main():
     global HEADER, WORKING_DIR, KILL_LIST
     global COUNTER, NEW_ERROR_COUNT, KNOWN_ERROR_COUNT, HTTP_ERROR_COUNT, NEW_MIME_COUNT
     global MAX_NEW_ERRORS, MAX_KNOWN_ERRORS, MAX_HTTP_ERRORS, MAX_NEW_MIMES, MAX_CRAWL_PAGES
-    global USE_CONFIG, OVERWRITE, RAISE_ERRORS, ZIP_FILES, OVERRIDE_SIZE, SAVE_WORDS, SAVE_PAGES, SAVE_COUNT
+    global USE_CONFIG, OVERWRITE, RAISE_ERRORS, ZIP_FILES, OVERRIDE_SIZE, SAVE_WORDS, SAVE_PAGES
     global TODO_FILE, DONE_FILE, ERR_LOG_FILE, WORD_FILE
     global RESPECT_ROBOTS, RESTRICT, DOMAIN
     global WORDS, TODO, DONE

@@ -1,1 +1,0 @@
-print("asdf.zip".strip(".zip"))
