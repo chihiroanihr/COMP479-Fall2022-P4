@@ -1,4 +1,6 @@
 import time
+import threading
+import logging
 from os import path, makedirs
 
 # Time statements.
@@ -9,10 +11,14 @@ def get_time():
 def get_full_time():
     return time.strftime('%H:%M:%S, %A %b %Y')
 
-START_TIME = int(time.time())
-START_TIME_LONG = get_time()
+def get_time_log():
+    return time.strftime('%H-%M-%S')
+
+def get_time_float():
+    return int(time.time())
 
 # Get current working directory of spidy
+# WORKING_DIR = path.dirname(path.abspath(__file__))
 WORKING_DIR = path.realpath('.')
 PACKAGE_DIR = path.dirname(path.realpath(__file__))
 
@@ -23,16 +29,29 @@ try:
 except OSError:
     pass  # Assumes only OSError wil complain if /logs already exists
 
-# Log location
-LOG_FILE_NAME = path.join('logs', 'log_{0}.txt'.format(START_TIME))
+def create_logger(name, err_log_file):
+    LOGGER = logging.getLogger(name)
+    LOGGER.setLevel(logging.DEBUG)
 
-# Error log location
-ERR_LOG_FILE = path.join('logs', 'error_log_{0}.txt'.format(START_TIME))
+    # create file handler
+    handler = logging.FileHandler(err_log_file)
+    # minimum level logged: DEBUG (0)
+    handler.setLevel(logging.DEBUG)
+
+    # create formatter
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    # add formatter to handler
+    handler.setFormatter(formatter)
+
+    # add ch to logger
+    LOGGER.addHandler(handler)
+
+    return LOGGER
 
 log_mutex = threading.Lock()
 
-def open_log():
-    LOG_FILE = open(LOG_FILE_NAME, 'w+', encoding='utf-8', errors='ignore')
+def open_log(log_file_name):
+    LOG_FILE = open(log_file_name, 'w+', encoding='utf-8', errors='ignore')
 
     return LOG_FILE
 
@@ -43,6 +62,7 @@ def write_log(log_file, operation, message, package='spidy', status='INFO', work
     Operations:
       INIT
       CRAWL
+      SCRAPE
       SAVE
       LOG
       ERROR
@@ -55,6 +75,7 @@ def write_log(log_file, operation, message, package='spidy', status='INFO', work
     PACKAGES:
       spidy
       reppy
+      bs4
 
     Worker 0 = Core
     """

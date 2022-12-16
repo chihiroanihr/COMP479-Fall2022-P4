@@ -1,0 +1,24 @@
+Top 20 terms for cluster 0 with k = 6: 
+school concordia science services academic calendar gina cody computer engineering research news graduate student university arts events colleges schools class 
+AFINN score for cluster 0 with k = 6 and top 20 terms: 0.0
+
+Top 20 terms for cluster 1 with k = 6: 
+concordia school calendar event science services campus graduate student academic arts university schools students class colleges news research gina cody 
+AFINN score for cluster 1 with k = 6 and top 20 terms: 0.0
+
+Top 20 terms for cluster 2 with k = 6: 
+test testing isolation execution production method risk cloud propose case methods activities software interferences environment fault event solution school providers 
+AFINN score for cluster 2 with k = 6 and top 20 terms: -1.0
+
+Top 20 terms for cluster 3 with k = 6: 
+concordiaâ concordia sustainable research says national glatard school director institute cyber university science calendar consortium smart graduate development future campus 
+AFINN score for cluster 3 with k = 6 and top 20 terms: 3.0
+
+Top 20 terms for cluster 4 with k = 6: 
+noma comp access multiple ris networks user fd techniques ceus bss cell integration power communication performance compared investigate literature spectral 
+AFINN score for cluster 4 with k = 6 and top 20 terms: 0.0
+
+Top 20 terms for cluster 5 with k = 6: 
+founded ba boutique based manette perfect retail 99 mary coffee concordia school suitablee fit pet holiday jordan comics seafood world 
+AFINN score for cluster 5 with k = 6 and top 20 terms: 4.0
+
