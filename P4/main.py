@@ -118,7 +118,7 @@ def write_clusters_scores_to_file(result, k):
 	except OSError:
 		pass  # Assumes only OSError wil complain if /logs already exists
 
-	FILE_NAME = path.join('clusters', 'k-{0}({1}).txt'.format(str(k)))
+	FILE_NAME = path.join('clusters', 'k-{0}.txt'.format(str(k)))
 	FILE = open(FILE_NAME, 'w+', encoding='utf-8', errors='ignore')
 
 	i = 0

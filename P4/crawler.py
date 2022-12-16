@@ -33,12 +33,13 @@ START_TIME_LOG = get_time_log()
 START_TIME_FLOAT = get_time_float()
 
 # Log location
-LOG_FILE_NAME = path.join('logs', 'crawl_log_{0}.txt'.format(START_TIME_LOG))
+LOG_FILE_NAME = path.join('logs', 'crawler_log_{0}.txt'.format(START_TIME_LOG))
 # Error log location
-ERR_LOG_FILE = path.join('logs', 'crawl_error_log_{0}.txt'.format(START_TIME_LOG))
+ERR_LOG_FILE = path.join('logs', 'crawler_error_log_{0}.txt'.format(START_TIME_LOG))
 
 LOG_FILE = open_log(LOG_FILE_NAME)
 LOGGER = create_logger('SPIDY', ERR_LOG_FILE)
+
 
 write_log(LOG_FILE, 'INIT', 'Starting spidy Web Crawler version {0}'.format(VERSION))
 write_log(LOG_FILE, 'INIT', 'Report any problems to GitHub at https://github.com/rivermont/spidy')
@@ -235,7 +236,7 @@ def crawl_worker(thread_id, robots_index):
     """
 
     # Declare global variables
-    global VERSION, START_TIME, START_TIME_FLOAT
+    global VERSION, START_TIME, START_TIME_LONG
     global LOG_FILE, LOG_FILE_NAME
     global HEADER, WORKING_DIR, KILL_LIST
     global COUNTER, NEW_ERROR_COUNT, KNOWN_ERROR_COUNT, HTTP_ERROR_COUNT, NEW_MIME_COUNT
@@ -289,7 +290,7 @@ def crawl_worker(thread_id, robots_index):
                             write_log(LOG_FILE, 'SAVE', 'Saving files...')
                             save_files()
                             if ZIP_FILES:
-                                zip_saved_files('saved')
+                                zip_saved_files(time.time(), 'saved')
                         finally:
                             # Reset variables
                             COUNTER = Counter(0)
@@ -534,10 +535,10 @@ def save_page(url, page):
     with open(file_path, 'w', encoding='utf-8', errors='ignore') as file:
         if ext == '.html':
             file.write('''<!-- "{0}" -->
-    <!-- Downloaded with the spidy Web Crawler -->
-    <!-- https://github.com/rivermont/spidy -->
-    '''.format(url))
-            file.write(page.text)
+<!-- Downloaded with the spidy Web Crawler -->
+<!-- https://github.com/rivermont/spidy -->
+'''.format(url))
+        file.write(page.text)
 
 
 def update_file(file, content, file_type):
@@ -560,7 +561,7 @@ def info_log():
     Logs important information to the console and log file.
     """
     # Print to console
-    write_log(LOG_FILE, 'LOG', 'Started at {0}'.format(START_TIME))
+    write_log(LOG_FILE, 'LOG', 'Started at {0}'.format(START_TIME_LONG))
     write_log(LOG_FILE, 'LOG', 'Log location: {0}'.format(LOG_FILE_NAME))
     write_log(LOG_FILE, 'LOG', 'Error log location: {0}'.format(ERR_LOG_FILE))
     write_log(LOG_FILE, 'LOG', '{0} links in TODO'.format(TODO.qsize()))
@@ -605,17 +606,17 @@ def err_log(url, error1, error2):
     LOGGER.error("\nURL: {0}\nERROR: {1}\nEXT: {2}\n\n".format(url, error1, str(error2)))
 
 
-def zip_saved_files(from_directory):
+def zip_saved_files(out_file_name, directory):
     """
     Creates a .zip file in the current directory containing all contents of dir, then empties.
     """
-    print("DIR: " + from_directory)
-    shutil.make_archive("crawled_pages", 'zip', from_directory)  # Zips files
+    print("DIR: " + directory)
+    shutil.make_archive("crawled_pages/" + str(out_file_name), 'zip', directory)  # Zips files
     # Deletes saved folder if exists
-    if path.exists(from_directory):
-        shutil.rmtree(from_directory)
-    makedirs(from_directory)  # Creates empty folder of same name
-    write_log(LOG_FILE, 'SAVE', 'Zipped documents to crawled_pages.zip')
+    if os.path.exists(directory):
+        shutil.rmtree(directory)
+    makedirs(directory)  # Creates empty folder of same name
+    write_log(LOG_FILE, 'SAVE', 'Zipped documents to {0}.zip'.format(out_file_name))
 
 
 ########
@@ -811,7 +812,7 @@ def init():
     and as a result can be used for effectively resetting the crawler.
     """
     # Declare global variables
-    global VERSION, START_TIME, START_TIME_FLOAT
+    global VERSION, START_TIME, START_TIME_LONG
     global LOG_FILE, LOG_FILE_NAME
     global HEADER, PACKAGE_DIR, WORKING_DIR, KILL_LIST
     global COUNTER, NEW_ERROR_COUNT, KNOWN_ERROR_COUNT, HTTP_ERROR_COUNT, NEW_MIME_COUNT
@@ -1143,6 +1144,14 @@ def done_crawling(keyboard_interrupt=False):
             write_log(LOG_FILE, 'CRAWL', 'I think you\'ve managed to download the entire internet. '
                                'I guess you\'ll want to save your files...')
         save_files()
+        # write_log(LOG_FILE, 'CRAWL', 'Queried {0} links.'.format(str(COUNTER.val)))
+        # info_log()
+        # if ZIP_FILES:
+        #     current_time = time.time()
+        #     # Format the current time as a string, using the format "YYYY-MM-DD_HH-MM-SS"
+        #     time_string = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime(current_time))
+        #     # Save to zip files
+        #     zip_saved_files(time_string, 'saved')
         LOG_FILE.close()
 
 
@@ -1156,7 +1165,7 @@ def spidy_main():
     The main function of spidy.
     """
     # Declare global variables
-    global VERSION, START_TIME, START_TIME_FLOAT
+    global VERSION, START_TIME, START_TIME_LONG
     global LOG_FILE, LOG_FILE_NAME
     global HEADER, WORKING_DIR, KILL_LIST
     global COUNTER, NEW_ERROR_COUNT, KNOWN_ERROR_COUNT, HTTP_ERROR_COUNT, NEW_MIME_COUNT
