@@ -1,0 +1,7 @@
+2022-12-16 09:22:16,473 - SPIDY - INFO - Successfully started crawler.
+2022-12-16 09:22:35,123 - SPIDY - ERROR - 
+URL: #content-main
+ERROR: Unknown
+EXT: Invalid URL '/robots.txt#/robots.txtc/robots.txto/robots.txtn/robots.txtt/robots.txte/robots.txtn/robots.txtt/robots.txt-/robots.txtm/robots.txta/robots.txti/robots.txtn/robots.txt': No scheme supplied. Perhaps you meant http:///robots.txt#/robots.txtc/robots.txto/robots.txtn/robots.txtt/robots.txte/robots.txtn/robots.txtt/robots.txt-/robots.txtm/robots.txta/robots.txti/robots.txtn/robots.txt?
+
+
