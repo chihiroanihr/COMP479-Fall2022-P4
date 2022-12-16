@@ -289,7 +289,7 @@ def crawl_worker(thread_id, robots_index):
                             write_log(LOG_FILE, 'SAVE', 'Saving files...')
                             save_files()
                             if ZIP_FILES:
-                                zip_saved_files(time.time(), 'saved')
+                                zip_saved_files('saved')
                         finally:
                             # Reset variables
                             COUNTER = Counter(0)
@@ -605,17 +605,17 @@ def err_log(url, error1, error2):
     LOGGER.error("\nURL: {0}\nERROR: {1}\nEXT: {2}\n\n".format(url, error1, str(error2)))
 
 
-def zip_saved_files(out_file_name, directory):
+def zip_saved_files(from_directory):
     """
     Creates a .zip file in the current directory containing all contents of dir, then empties.
     """
-    print("DIR: " + directory)
-    shutil.make_archive("crawled_pages/" + str(out_file_name), 'zip', directory)  # Zips files
+    print("DIR: " + from_directory)
+    shutil.make_archive("crawled_pages", 'zip', from_directory)  # Zips files
     # Deletes saved folder if exists
-    if path.exists(directory):
-        shutil.rmtree(directory)
-    makedirs(directory)  # Creates empty folder of same name
-    write_log(LOG_FILE, 'SAVE', 'Zipped documents to {0}.zip'.format(out_file_name))
+    if path.exists(from_directory):
+        shutil.rmtree(from_directory)
+    makedirs(from_directory)  # Creates empty folder of same name
+    write_log(LOG_FILE, 'SAVE', 'Zipped documents to crawled_pages.zip')
 
 
 ########
