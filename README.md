@@ -1,2 +1,3 @@
 # COMP479-Fall2022-P4
-COMP 479 Project 4 which experiments web crawling, scraping, and indexing a set of web documents, then clustering it with k-means. Finally, assigning sentiment score to each clusters through AFINN - a sentiment analysis script.
+
+The "Information Retrieval and Web Search" project at Concordia University involved conducting experiments in web crawling, scraping, and indexing a collection of web documents. These documents were subsequently subjected to clustering using the k-means algorithm. Furthermore, sentiment scores were assigned to each cluster utilizing AFINN, a sentiment analysis script.
