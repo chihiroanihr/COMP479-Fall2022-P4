@@ -21,7 +21,7 @@ from globals import *
 
 
 try:
-    from P4 import __version__
+    from project import __version__
 except ImportError:
     from __init__ import __version__
 
