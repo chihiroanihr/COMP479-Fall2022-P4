@@ -1,12 +1,14 @@
 # COMP479-Fall2022-P4
 
+**Information Retrieval and Web Search** course project at Concordia University - assigned by Dr. Sabine Bergler.
+
 ## Overview
 
-COMP 479 Project which experiments web crawling, scraping, and indexing a set of web documents, then clustering it with k-means. Finally, sentiment score is assigned to each clusters through AFINN - a sentiment analysis script.
+COMP 479 Project which experiments with web crawling, scraping, and indexing a set of web documents, then clustering it with k-means. Finally, sentiment score is assigned to each clusters through AFINN - a sentiment analysis script.
 
 This assignment consists of 4 stages: **P1**, **P2**, **P3**, and **P4**. This repository is dedicated to stage **P4**.
 
-For original project outline (assigned by Dr. Sabine Bergler - Concordia University) for this stage (**P4**), refer to [here](/outlines/p4.pdf).
+For the original project outline (assigned by Dr. Sabine Bergler) for this stage (**P4**), refer to [here](/outlines/p4.pdf).
 
 #### Built with **Python**.
 
@@ -25,7 +27,7 @@ For original project outline (assigned by Dr. Sabine Bergler - Concordia Univers
 
 - [**Spidy**](https://github.com/rivermont/spidy) (Refer to its documentation [here](/project/spider-docs/))
 
-## Project Outliens
+## Project Outlines
 
 - [Outline](/outlines/p4.pdf)
 
