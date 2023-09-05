@@ -1,5 +1,7 @@
 # COMP479-Fall2022-P4
 
+## Overview
+
 COMP 479 Project which experiments web crawling, scraping, and indexing a set of web documents, then clustering it with k-means. Finally, sentiment score is assigned to each clusters through AFINN - a sentiment analysis script.
 
 This assignment consists of 4 stages: **P1**, **P2**, **P3**, and **P4**. This repository is dedicated to stage **P4**.
