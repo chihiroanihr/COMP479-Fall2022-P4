@@ -4,11 +4,13 @@
 
 ## Overview
 
-COMP479 Project which experiments with web crawling, scraping, and indexing a set of web documents. These documents were then clustered using the k-means algorithm, and sentiment scores were assigned to each cluster using the AFINN sentiment analysis script.
+COMP479 Project (P4) which experiments with web crawling, scraping, and indexing a set of web documents. These documents were then clustered using the k-means algorithm, and sentiment scores were assigned to each cluster using the AFINN sentiment analysis script.
 
-This assignment consists of 4 stages: **P1**, **P2**, **P3**, and **P4**. This repository is dedicated to stage **P4**.
+For the original project outline (assigned by Dr. Sabine Bergler), refer to [here](/p4.pdf).
 
-For the original project outline (assigned by Dr. Sabine Bergler) for this stage (**P4**), refer to [here](/outlines/p4.pdf).
+- [Outline](/p4.pdf)
+- [Demo](/deliverables/demo.pdf)
+- [Report](/deliverables/report.pdf)
 
 #### Built with **Python**.
 
@@ -25,25 +27,4 @@ For the original project outline (assigned by Dr. Sabine Bergler) for this stage
 
 ### Crawling Tool
 
-- [**Spidy**](https://github.com/rivermont/spidy) (Refer to its documentation [here](/project/spider-docs/))
-
-## Project Outlines
-
-- [Outline](/outlines/p4.pdf)
-
-### Past Stages Outlines
-
-- [P1 Outline](/outlines/p1.pdf)
-- [P2 Outline](/outlines/p2.pdf)
-- [P3 Outline](/outlines/p3.pdf)
-
-## Deliverables
-
-- [Demo](/deliverables/p4/demo.pdf)
-- [Report](/deliverables/p4/demo.pdf)
-
-### Past Stages Deliverables
-
-- [P1 Deliverables](/deliverables/p1)
-- [P2 Deliverables](/deliverables/p2)
-- [P3 Deliverables](/deliverables/p3)
+- [**Spidy**](https://github.com/rivermont/spidy) (Refer to its documentation [here](/project/spider-docs))
