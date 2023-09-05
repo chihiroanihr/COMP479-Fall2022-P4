@@ -21,8 +21,7 @@ For original project outline (assigned by Dr. Sabine Bergler - Concordia Univers
 
 ### Crawling Tool
 
-- [Spidy](https://github.com/rivermont/spidy)
-  Refer to its documentation [here](/project/spider-docs/)
+- [**Spidy**](https://github.com/rivermont/spidy) (Refer to its documentation [here](/project/spider-docs/))
 
 ## Project Outliens
 
