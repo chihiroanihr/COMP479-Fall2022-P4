@@ -8,6 +8,8 @@ COMP479 Project (P4) which experiments with web crawling, scraping, and indexing
 
 For the original project outline (assigned by Dr. _Sabine Bergler_), click [here](/p4.pdf).
 
+### Resources
+
 - [Outline](/p4.pdf)
 - [Demo](/deliverables/demo.pdf)
 - [Report](/deliverables/report.pdf)
