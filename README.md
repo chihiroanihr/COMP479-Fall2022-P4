@@ -14,7 +14,11 @@ For the original project outline (assigned by Dr. _Sabine Bergler_), click [here
 - [Demo](/deliverables/demo.pdf)
 - [Report](/deliverables/report.pdf)
 
-#### Built with **Python**.
+## Programming Language
+
+### Built with Python
+
+**Python>=3.8** is used as a programming language for this project due to its compatibility with natural language processing tasks, facilitated by the NLTK package.
 
 ## Dependencies
 
