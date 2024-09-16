@@ -6,7 +6,7 @@
 
 COMP479 Project (P4) which experiments with **web crawling**, **web scraping**, and **indexing** a collection of web documents. Subsequently, the indexed data is clustered using the **k-means** algorithm. Each resulting cluster is then assigned a sentiment score using **AFINN** - a script used for sentiment analysis.
 
-For the original project outline (assigned by Dr. _Sabine Bergler_), click [here](/p4.pdf).
+For the original project outline (professor Dr. _Sabine Bergler_), click [here](/p4.pdf).
 
 ### Resources
 
