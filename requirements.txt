@@ -2,7 +2,7 @@ afinn==0.1
 beautifulsoup4==4.11.1
 bs4==0.0.1
 cachetools==5.2.0
-certifi==2023.7.22
+certifi==2024.7.4
 charset-normalizer==2.1.1
 idna==3.7
 joblib==1.2.0
